@@ -1,0 +1,10 @@
+<div class="add-person-page">
+  <h1>Update Detail</h1>
+  <%= form_with(model: [@person, @person_detail], url: person_detail_path(@person, @person_detail), method: :patch, local: true) do |form| %>
+
+    <%= render 'form_fields', form: form %>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>

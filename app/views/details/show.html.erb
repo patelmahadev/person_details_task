@@ -1,0 +1,9 @@
+<%= turbo_frame_tag 'person-details' do %>
+  <div id="person-details-info">
+    <h1>Person Details</h1>
+    <p><strong>ID:</strong> <%= @person_detail.person_id %></p>
+    <p><strong>Title:</strong> <%= @person_detail.title %></p>
+    <p><strong>Age:</strong> <%= @person_detail.age %></p>
+    <p><strong>Phone:</strong> <%= @person_detail.phone %></p>
+  </div>
+<% end %>
